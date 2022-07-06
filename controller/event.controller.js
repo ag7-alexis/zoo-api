@@ -48,3 +48,18 @@ export const replace = async (req, res) => {
     );
     res.send(event);
 };
+
+export const update = async (req, res) => {
+    const { id } = req.params;
+    const { title, description, startDate, endDate, countExpectedPeople, location, animals } = req.body;
+    const event = await EventService.replaceEvent(id, {
+        ...(title && { title }),
+        ...(description && { description }),
+        ...(startDate && { startDate }),
+        ...(endDate && { endDate }),
+        ...(countExpectedPeople && { countExpectedPeople }),
+        ...(location && { location }),
+        ...(animals && { animals }),
+    });
+    res.send(event);
+};
