@@ -7,8 +7,8 @@ const schemaEvent = mongoose.Schema({
     endDate: Date,
     countExpectedPeople: Number,
     location: String,
-    animals: [{ type: ObjectId, ref: "Animal" }],
-    customers: [{ type: ObjectId, ref: "Customer" }],
+    animals: [{ type: mongoose.Schema.Types.ObjectId, ref: "Animal" }],
+    customers: [{ type: mongoose.Schema.Types.ObjectId, ref: "Customer" }],
 });
 
 export default mongoose.model("Event", schemaEvent);

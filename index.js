@@ -18,7 +18,7 @@ database.on("error", console.error.bind(console, "connection error"));
 
 app.use(express.json());
 
-app.use("/api", router);
+// app.use("/api", router);
 app.use("/api", routesEvent);
 app.use("/api", routesCustomer);
 app.use("/api", routesAnimal);
