@@ -2,9 +2,9 @@ const mongoose = require('mongoose');
 
 const schema = mongoose.Schema({
     name: String,
-    color: String,
     race: String,
-    age: Number
+    age: Number,
+    events: [{ type : ObjectId, ref: 'Event' }]
 });
 
 module.exports = mongoose.model("Animal", schema);
