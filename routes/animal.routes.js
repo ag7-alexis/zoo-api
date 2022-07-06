@@ -25,37 +25,48 @@ router.get("/animal", AnimalController.getAll);
  */
 router.post("/animal", AnimalController.create);
 
- /**
-  * @openapi
-  * /:
-  *   get:
-  *     description: Welcome to swagger-jsdoc!
-  *     responses:
-  *       200:
-  *         description: Returns a mysterious string.
-  */
- router.get("/animal/:id", AnimalController.getById);
- 
- /**
-  * @openapi
-  * /:
-  *   delete:
-  *     description: Welcome to swagger-jsdoc!
-  *     responses:
-  *       200:
-  *         description: Returns a mysterious string.
-  */
+/**
+ * @openapi
+ * /:
+ *   get:
+ *     description: Welcome to swagger-jsdoc!
+ *     responses:
+ *       200:
+ *         description: Returns a mysterious string.
+ */
+router.get("/animal/:id", AnimalController.getById);
+
+/**
+ * @openapi
+ * /:
+ *   delete:
+ *     description: Welcome to swagger-jsdoc!
+ *     responses:
+ *       200:
+ *         description: Returns a mysterious string.
+ */
 router.delete("/animal/:id", AnimalController.deleteById);
- 
- /**
-  * @openapi
-  * /:
-  *   post:
-  *     description: Welcome to swagger-jsdoc!
-  *     responses:
-  *       200:
-  *         description: Returns a mysterious string.
-  */
-router.post("/animal", AnimalController.create);
+
+/**
+ * @openapi
+ * /:
+ *   put:
+ *     description: Welcome to swagger-jsdoc!
+ *     responses:
+ *       200:
+ *         description: Returns a mysterious string.
+ */
+router.put("/animal/:id", AnimalController.replace);
+
+/**
+ * @openapi
+ * /:
+ *   patch:
+ *     description: Welcome to swagger-jsdoc!
+ *     responses:
+ *       200:
+ *         description: Returns a mysterious string.
+ */
+router.patch("/animal/:id", AnimalController.update);
 
 export default router;

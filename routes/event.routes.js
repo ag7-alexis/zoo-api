@@ -50,17 +50,6 @@ router.post("/event", EventController.create);
 /**
  * @openapi
  * /:
- *   post:
- *     description: Welcome to swagger-jsdoc!
- *     responses:
- *       200:
- *         description: Returns a mysterious string.
- */
-router.post("/event", EventController.create);
-
-/**
- * @openapi
- * /:
  *   put:
  *     description: Welcome to swagger-jsdoc!
  *     responses:

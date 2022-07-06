@@ -7,7 +7,7 @@ const schema = mongoose.Schema({
     address: String,
     phone: String,
     peoples: [{ Age: Number, Sexe: String }],
-    createdAt: { type: Date, default: Date.now },
+    creationDate: { type: Date, default: Date.now },
     events: [{ type: mongoose.Schema.Types.ObjectId, ref: "Event" }],
 });
 

@@ -5,6 +5,7 @@ const schemaEvent = mongoose.Schema({
     description: String,
     startDate: Date,
     endDate: Date,
+    creationDate: { type: Date, default: Date.now },
     countExpectedPeople: Number,
     location: {
         type: {

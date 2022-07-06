@@ -5,6 +5,7 @@ const schema = mongoose.Schema({
     race: String,
     age: Number,
     sexe: String,
+    creationDate: { type: Date, default: Date.now },
     events: [{ type: mongoose.Schema.Types.ObjectId, ref: "Event" }],
 });
 

@@ -1,6 +1,6 @@
 import express from "express";
 import routesEvent from "./routes/event.routes.js";
-import routesCustomer from "./routes/routesCustomer.js";
+import routesCustomer from "./routes/customer.routes.js";
 import routesAnimal from "./routes/animal.routes.js";
 import mongoose from "mongoose";
 import swaggerJSDoc from "swagger-jsdoc";

@@ -1,9 +1,53 @@
 import Customer from "../models/customer.model.js";
 
-export const getCustomer = (filter) => Customer.find(filter);
-export const getCustomerById = (filter) => Customer.findById(filter);
-export const createCustomer = (customerData) => {
-    const customer = new Customer(customerData);
-    return customer.save();
+export const getCustomers = (filter, page, limit) => {
+    try {
+        return Customer.find(filter)
+            .sort("-creationDate")
+            .skip(page * limit)
+            .limit(limit);
+    } catch (e) {
+        throw Error("Error while Paginating Customers");
+    }
 };
-export const deleteCustomer = (filter) => Customer.deleteOne(filter);
+
+export const getCustomerById = (id) => {
+    try {
+        return Customer.findById(id);
+    } catch (error) {
+        throw Error("Fail when try to find Customer with Id " + id);
+    }
+};
+
+export const deleteCustomer = (filter) => {
+    try {
+        return Customer.deleteOne(filter);
+    } catch (error) {
+        throw Error("Fail when try to delete Customer with Id " + id);
+    }
+};
+
+export const createCustomer = (customerData) => {
+    try {
+        const customer = new Customer(customerData);
+        return customer.save();
+    } catch (error) {
+        throw Error("Fail when try to create Customer");
+    }
+};
+
+export const replaceCustomer = (filter, customerData) => {
+    try {
+        return Customer.findOneAndReplace(filter, customerData, { new: true });
+    } catch (error) {
+        throw Error("Fail when try to replace Customer with Id " + id);
+    }
+};
+
+export const updateCustomer = (id, customerData) => {
+    try {
+        return Customer.findByIdAndUpdate(id, customerData, { new: true });
+    } catch (error) {
+        throw Error("Fail when try to update Customer with Id " + id);
+    }
+};
