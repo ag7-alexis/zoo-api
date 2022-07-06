@@ -78,6 +78,6 @@ router.put("/event/:id", EventController.replace);
  *       200:
  *         description: Returns a mysterious string.
  */
-router.patch("/event/:id", EventController.replace);
+router.patch("/event/:id", EventController.update);
 
 export default router;

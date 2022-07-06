@@ -52,7 +52,7 @@ export const replace = async (req, res) => {
 export const update = async (req, res) => {
     const { id } = req.params;
     const { title, description, startDate, endDate, countExpectedPeople, location, animals } = req.body;
-    const event = await EventService.replaceEvent(id, {
+    const event = await EventService.updateEvent(id, {
         ...(title && { title }),
         ...(description && { description }),
         ...(startDate && { startDate }),
