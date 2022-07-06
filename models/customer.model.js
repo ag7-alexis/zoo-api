@@ -1,4 +1,4 @@
-import { mongoose } from "mongoose";
+import mongoose from "mongoose";
 
 const schema = mongoose.Schema({
     name: String,
@@ -6,8 +6,9 @@ const schema = mongoose.Schema({
     email: String,
     address: String,
     phone: String,
-    peoples: { Age: Number, Sexe: String },
+    peoples: [{ Age: Number, Sexe: String }],
     createdAt: { type: Date, default: Date.now },
+    events: [{ type: mongoose.Schema.Types.ObjectId, ref: "Event" }],
 });
 
 export default mongoose.model("Customer", schema);
