@@ -5,7 +5,7 @@ const router = require('./routes');
 
 const mongoose = require('mongoose');
 
-const mongodb = 'mongodb+srv://Landry:Toshiba60600@cluster0.zpaau.mongodb.net/zoo';
+const mongodb = 'mongodb+srv://mongo_admin:test123@cluster0.4hmoj.mongodb.net/zoo';
 
 mongoose.connect(mongodb);
 
