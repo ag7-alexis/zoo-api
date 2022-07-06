@@ -8,4 +8,5 @@ export const createEvent = (eventData) => {
     return event.save();
 };
 
-export const replaceEvent = (filter, eventData) => Event.findOneAndReplace(filter, eventData);
+export const replaceEvent = (filter, eventData) => Event.findOneAndReplace(filter, eventData, { new: true });
+export const updateEvent = (id, eventData) => Event.findByIdAndUpdate(id, eventData, { new: true });
