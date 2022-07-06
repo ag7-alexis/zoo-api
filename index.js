@@ -1,14 +1,28 @@
 import express from "express";
-import routesEvent from "./routes/routesEvent.js";
+import routesEvent from "./routes/event.routes.js";
 import routesCustomer from "./routes/routesCustomer.js";
 import routesAnimal from "./routes/routesAnimal.js";
+import mongoose from "mongoose";
+import swaggerJSDoc from "swagger-jsdoc";
+import swaggerUi from "swagger-ui-express";
+import * as dotenv from "dotenv";
 
-const port = 3000;
+dotenv.config();
+
+const options = {
+    definition: {
+        openapi: "3.0.0",
+        info: {
+            title: "Zoo API",
+            version: "1.0.0",
+        },
+    },
+    apis: ["./routes/*.js"],
+};
+
 const app = express();
 
-import { mongoose } from "mongoose";
-
-const mongodb = "mongodb+srv://mongo_admin:test123@cluster0.4hmoj.mongodb.net/test";
+const mongodb = process.env.MONGODB_URI;
 
 mongoose.connect(mongodb);
 
@@ -18,11 +32,13 @@ database.on("error", console.error.bind(console, "connection error"));
 
 app.use(express.json());
 
-// app.use("/api", router);
+const specs = swaggerJSDoc(options);
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(specs));
+
 app.use("/api", routesEvent);
 app.use("/api", routesCustomer);
 app.use("/api", routesAnimal);
 
-app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
+app.listen(process.env.PORT, () => {
+    console.log(`Server is running on port ${process.env.PORT}`);
 });
