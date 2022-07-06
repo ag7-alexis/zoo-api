@@ -23,11 +23,7 @@ router.get("/event", EventController.getAll);
  *       200:
  *         description: Returns a mysterious string.
  */
-router.get("/event/:id", async (req, res) => {
-    const { id } = req.params;
-    const events = await Event.findById(id);
-    res.send(events);
-});
+router.get("/event/:id", EventController.getById);
 
 /**
  * @openapi
@@ -38,11 +34,7 @@ router.get("/event/:id", async (req, res) => {
  *       200:
  *         description: Returns a mysterious string.
  */
-router.delete("/event/:id", async (req, res) => {
-    const { id } = req.params;
-    await Event.deleteOne({ _id: id });
-    res.send();
-});
+router.delete("/event/:id", EventController.deleteById);
 
 /**
  * @openapi
@@ -53,19 +45,28 @@ router.delete("/event/:id", async (req, res) => {
  *       200:
  *         description: Returns a mysterious string.
  */
-router.post("/event", async (req, res) => {
-    const { title, description, startDate, endDate, countExpectedPeople, location, animals } = req.body;
-    const event = new Event({
-        title,
-        description,
-        startDate,
-        endDate,
-        countExpectedPeople,
-        location,
-        animals,
-    });
-    await event.save();
-    res.send(event);
-});
+router.post("/event", EventController.create);
+
+/**
+ * @openapi
+ * /:
+ *   post:
+ *     description: Welcome to swagger-jsdoc!
+ *     responses:
+ *       200:
+ *         description: Returns a mysterious string.
+ */
+router.post("/event", EventController.create);
+
+/**
+ * @openapi
+ * /:
+ *   put:
+ *     description: Welcome to swagger-jsdoc!
+ *     responses:
+ *       200:
+ *         description: Returns a mysterious string.
+ */
+router.put("/event/:id", EventController.replace);
 
 export default router;
