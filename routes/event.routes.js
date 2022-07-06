@@ -69,4 +69,15 @@ router.post("/event", EventController.create);
  */
 router.put("/event/:id", EventController.replace);
 
+/**
+ * @openapi
+ * /:
+ *   patch:
+ *     description: Welcome to swagger-jsdoc!
+ *     responses:
+ *       200:
+ *         description: Returns a mysterious string.
+ */
+router.patch("/event/:id", EventController.update);
+
 export default router;
