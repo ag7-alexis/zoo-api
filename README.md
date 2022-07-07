@@ -3,7 +3,13 @@
 ## Présentation
 
 Zoo Api est une api qui permet la gestion des événements, des animeaux et des clients du zoo.
-Commencer à prendre l'application en main : http://localhost:3000/api-docs/
+
+## Installation
+
+npm install
+créer un fichier .env a partir du .env.default avec vos infos
+nodemon index.json
+se rendre sur http://localhost:{votre PORT}/api-docs/
 
 ## Register / Login
 
