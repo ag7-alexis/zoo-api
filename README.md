@@ -8,19 +8,20 @@ Zoo Api est une api qui permet la gestion des événements, des animeaux et des 
 
 npm install
 créer un fichier .env a partir du .env.default avec vos infos
-nodemon index.json
+npm run populate
+npm start
 se rendre sur http://localhost:{votre PORT}/api-docs/
 Les différentes collections pour la base de données est disponible en format "json" dans le dossier "database".
 
 ## Arborescence
-- L'utilisateur de Zoo Api va effectuer une requête sur une route, exemple : "/api/animal".
-- L'application va faire un appel au controller pour exécuter la fonction concernant la route.
-  Dans notre cas, on appelle "getAll" dans le controller "animal.controller".
-  La fonction appellée précédement va récupèrer les données de la "request" si il y en a besoin.
-- Puis il va envoyer les données qu'il a récupéré au "listener" pour éxécuter les appels à la base
-  de données.
-  Le "listener" va par la suite renvoyer au "controller" le résultat et par la suite le "controller" va donc retourner une "response" avec le résultat qui lui a été confié.
-   
+
+-   L'utilisateur de Zoo Api va effectuer une requête sur une route, exemple : "/api/animal".
+-   L'application va faire un appel au controller pour exécuter la fonction concernant la route.
+    Dans notre cas, on appelle "getAll" dans le controller "animal.controller".
+    La fonction appellée précédement va récupèrer les données de la "request" si il y en a besoin.
+-   Puis il va envoyer les données qu'il a récupéré au "listener" pour éxécuter les appels à la base
+    de données.
+    Le "listener" va par la suite renvoyer au "controller" le résultat et par la suite le "controller" va donc retourner une "response" avec le résultat qui lui a été confié.
 
 ## Register / Login
 

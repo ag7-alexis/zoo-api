@@ -156,6 +156,7 @@ export const getEventNearToAnEventByEventId = async (req, res) => {
         res.setHeader("X-Total", countEvents);
         return res.send(events);
     } catch (error) {
+        console.log(error);
         return res.status(500).send({ message: error });
     }
 };
