@@ -131,7 +131,7 @@ router.get("/customer/:id/events", CustomerController.getCustomerEventsId);
  *       404:
  *         description: Customer with this id not found.
  */
-router.get("/customer/metrics/sexe", CustomerController.getMajorMinor);
+router.get("/customer/metrics/sexe", CustomerController.getCountPeopleBySexe);
 
 /**
  * @openapi

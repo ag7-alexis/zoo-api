@@ -41,7 +41,7 @@ export const getCustomerEventsId = async (req, res) => {
     }
 };
 
-export const getMajorMinor = async (req, res) => {
+export const getCountPeopleBySexe = async (req, res) => {
     try {
         const customerMajor = await CustomerService.countPeopleBySexe();
         return res.send(customerMajor);
