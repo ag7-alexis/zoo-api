@@ -1,5 +1,6 @@
 import express from "express";
 import * as AnimalController from "../controller/animal.controller.js";
+import { authentificateJWT } from "../authentificate.js";
 
 const router = express.Router();
 
@@ -12,7 +13,7 @@ const router = express.Router();
  *       200:
  *         description: Returns a mysterious string.
  */
-router.get("/animal", AnimalController.getAll);
+router.get("/animal", authentificateJWT, AnimalController.getAll);
 
 /**
  * @openapi

@@ -2,6 +2,7 @@ import express from "express";
 import routesEvent from "./routes/event.routes.js";
 import routesCustomer from "./routes/customer.routes.js";
 import routesAnimal from "./routes/animal.routes.js";
+import routesUser from "./routes/user.routes.js";
 import mongoose from "mongoose";
 import swaggerJSDoc from "swagger-jsdoc";
 import swaggerUi from "swagger-ui-express";
@@ -38,6 +39,7 @@ app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(specs));
 app.use("/api", routesEvent);
 app.use("/api", routesCustomer);
 app.use("/api", routesAnimal);
+app.use("/api", routesUser);
 
 app.listen(process.env.PORT, () => {
     console.log(`Server is running on port ${process.env.PORT}`);
