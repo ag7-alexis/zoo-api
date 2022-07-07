@@ -38,7 +38,7 @@ export const deleteById = async (req, res) => {
 };
 
 export const create = async (req, res) => {
-    const { name, age, email, address, phone, peoples, createdAt, events } = req.body;
+    const { name, age, email, address, phone, peoples, events } = req.body;
     try {
         const customer = await CustomerService.createCustomer({
             name,
@@ -47,7 +47,6 @@ export const create = async (req, res) => {
             address,
             phone,
             peoples,
-            createdAt,
             events,
         });
         return res.status(201).send(customer);
@@ -58,7 +57,7 @@ export const create = async (req, res) => {
 
 export const replace = async (req, res) => {
     const { id } = req.params;
-    const { name, age, email, address, phone, peoples, createdAt, events } = req.body;
+    const { name, age, email, address, phone, peoples, events } = req.body;
     try {
         const customer = await CustomerService.replaceCustomer(
             { _id: id },
@@ -69,7 +68,6 @@ export const replace = async (req, res) => {
                 address,
                 phone,
                 peoples,
-                createdAt,
                 events,
             }
         );
@@ -84,7 +82,7 @@ export const replace = async (req, res) => {
 
 export const update = async (req, res) => {
     const { id } = req.params;
-    const { name, age, email, address, phone, peoples, createdAt, events } = req.body;
+    const { name, age, email, address, phone, peoples, events } = req.body;
 
     try {
         const customer = await CustomerService.updateCustomer(id, {
@@ -94,7 +92,6 @@ export const update = async (req, res) => {
             ...(address !== undefined && { address }),
             ...(phone !== undefined && { phone }),
             ...(peoples !== undefined && { peoples }),
-            ...(createdAt !== undefined && { createdAt }),
             ...(events !== undefined && { events }),
         });
 
