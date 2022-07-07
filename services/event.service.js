@@ -75,15 +75,3 @@ export const updateEvent = (id, eventData) => {
         throw new Error("Fail when try to update Event with Id " + id);
     }
 };
-
-export const findEventsByGeocoding = (filter, page, limit) => {
-    try {
-        return Event.geoSearch(filter)
-            .sort("-creationDate")
-            .skip(page * limit)
-            .limit(limit);
-    } catch (e) {
-        console.log(e);
-        throw new Error("Error while Paginating Events");
-    }
-};
