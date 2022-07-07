@@ -26,6 +26,34 @@ export const getById = async (req, res) => {
     }
 };
 
+export const getCustomerEventsId = async (req, res) => {
+    const { id } = req.params;
+    try {
+        const customer = await CustomerService.getCustomerEventsById(id);
+        if (customer === null) {
+            return res.status(404).send({ message: "Can't found customer with Id " + id });
+        }
+        return res.send(customer);
+    } catch (error) {
+        return res.status(500).send({ message: error });
+    }
+};
+
+export const getMajorMinor = async (req, res) => {
+    try {
+        const customerMajor = await CustomerService.getMajorCustomer({});
+        const customerMinor = await CustomerService.getMinorCustomer({});
+        if (customerMajor === null) {
+            return res.status(404).send({ message: "Can't found major and minor customer" });
+        }
+        return res.send({customerMajor, customerMinor});
+    } catch (error) {
+        return res.status(500).send({ message: error });
+    }
+};
+
+
+
 export const deleteById = async (req, res) => {
     const { id } = req.params;
     try {

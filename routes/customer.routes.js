@@ -95,6 +95,47 @@ router.post("/customer", CustomerController.create);
  */
 router.get("/customer/:id", CustomerController.getById);
 
+
+/**
+ * @openapi
+ * /api/customer-events/{id}:
+ *   get:
+ *     description: Welcome to swagger-jsdoc!
+ *     tags: [Customer]
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         type: string
+ *         description: The id of the customer
+ *     responses:
+ *       200:
+ *         description: Returns a mysterious string.
+ *       404:
+ *         description: Customer with this id not found.
+ */
+router.get("/customer-events/:id", CustomerController.getCustomerEventsId);
+
+
+/**
+ * @openapi
+ * /api/customer-major-minor:
+ *   get:
+ *     description: Welcome to swagger-jsdoc!
+ *     tags: [Customer]
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         type: string
+ *         description: The id of the customer
+ *     responses:
+ *       200:
+ *         description: Returns a mysterious string.
+ *       404:
+ *         description: Customer with this id not found.
+ */
+ router.get("/customer-major-minor", CustomerController.getMajorMinor);
+
+
 /**
  * @openapi
  * /api/customer/{id}:
