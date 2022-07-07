@@ -41,7 +41,7 @@ router.get("/customer", CustomerController.getAll);
  * @openapi
  * /api/customer:
  *   post:
- *     description: Welcome to swagger-jsdoc!
+ *     description: Create a customer
  *     tags: [Customer]
  *     consumes:
  *      - application/json
@@ -72,7 +72,7 @@ router.get("/customer", CustomerController.getAll);
  *               type: string
  *     responses:
  *       201:
- *         description: Returns a mysterious string.
+ *         description: Return the customer created
  */
 router.post("/customer", CustomerController.create);
 
@@ -80,7 +80,7 @@ router.post("/customer", CustomerController.create);
  * @openapi
  * /api/customer/{id}:
  *   get:
- *     description: Welcome to swagger-jsdoc!
+ *     description: Get the customer by id
  *     tags: [Customer]
  *     parameters:
  *       - in: path
@@ -89,7 +89,7 @@ router.post("/customer", CustomerController.create);
  *         description: The id of the customer
  *     responses:
  *       200:
- *         description: Returns a mysterious string.
+ *         description: Return the customer find
  *       404:
  *         description: Customer with this id not found.
  */
@@ -99,7 +99,7 @@ router.get("/customer/:id", CustomerController.getById);
  * @openapi
  * /api/customer/:id/events:
  *   get:
- *     description: Welcome to swagger-jsdoc!
+ *     description: Get events of a customer
  *     tags: [Customer]
  *     parameters:
  *       - in: path
@@ -108,7 +108,7 @@ router.get("/customer/:id", CustomerController.getById);
  *         description: The id of the customer
  *     responses:
  *       200:
- *         description: Returns a mysterious string.
+ *         description: Return the events of the customer
  *       404:
  *         description: Customer with this id not found.
  */
@@ -118,7 +118,7 @@ router.get("/customer/:id/events", CustomerController.getCustomerEventsId);
  * @openapi
  * /api/customer/metrics/sexe:
  *   get:
- *     description: Welcome to swagger-jsdoc!
+ *     description: Count people by sexe
  *     tags: [Customer]
  *     parameters:
  *       - in: path
@@ -127,9 +127,9 @@ router.get("/customer/:id/events", CustomerController.getCustomerEventsId);
  *         description: The id of the customer
  *     responses:
  *       200:
- *         description: Returns a mysterious string.
+ *         description: Return numerics for the two sexes 
  *       404:
- *         description: Customer with this id not found.
+ *         description: Return nothing
  */
 router.get("/customer/metrics/sexe", CustomerController.getCountPeopleBySexe);
 
@@ -137,7 +137,7 @@ router.get("/customer/metrics/sexe", CustomerController.getCountPeopleBySexe);
  * @openapi
  * /api/customer/{id}:
  *   delete:
- *     description: Welcome to swagger-jsdoc!
+ *     description: Delete a customer
  *     tags: [Customer]
  *     parameters:
  *       - in: path
@@ -156,7 +156,7 @@ router.delete("/customer/:id", CustomerController.deleteById);
  * @openapi
  * /api/customer/{id}:
  *   put:
- *     description: Welcome to swagger-jsdoc!
+ *     description: Replace a customer with an id.
  *     tags: [Customer]
  *     parameters:
  *       - in: path
@@ -165,9 +165,9 @@ router.delete("/customer/:id", CustomerController.deleteById);
  *         description: The id of the customer
  *     responses:
  *       200:
- *         description: Returns a mysterious string
+ *         description: Returns the new customer for this id.
  *       404:
- *         description: Customer with this id not found..
+ *         description: Customer with this id not found.
  */
 router.put("/customer/:id", CustomerController.replace);
 
@@ -175,7 +175,7 @@ router.put("/customer/:id", CustomerController.replace);
  * @openapi
  * /api/customer/{id}:
  *   patch:
- *     description: Welcome to swagger-jsdoc!
+ *     description: Edit a customer with an id.
  *     tags: [Customer]
  *     parameters:
  *       - in: path
@@ -184,7 +184,7 @@ router.put("/customer/:id", CustomerController.replace);
  *         description: The id of the customer
  *     responses:
  *       200:
- *         description: Returns a mysterious string.
+ *         description: Returns the new values for this customer.
  *       404:
  *         description: Customer with this id not found.
  */
