@@ -125,4 +125,42 @@ router.put("/event/:id", EventController.replace);
  */
 router.patch("/event/:id", EventController.update);
 
+/**
+ * @openapi
+ * /api/event/{id}/customers:
+ *   patch:
+ *     description: WRetrieve customers of an event
+ *     tags: [Event]
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         type: string
+ *         description: The id of the event
+ *     responses:
+ *       200:
+ *         description: Returns a list of customers.
+ *       404:
+ *         description: Event with this id not found.
+ */
+router.get("/event/:id/customers", EventController.getCustomerByEventId);
+
+/**
+ * @openapi
+ * /api/event/{id}/near-events:
+ *   patch:
+ *     description: WRetrieve customers of an event
+ *     tags: [Event]
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         type: string
+ *         description: The id of the event
+ *     responses:
+ *       200:
+ *         description: Returns a list of customers.
+ *       404:
+ *         description: Event with this id not found.
+ */
+router.get("/event/:id/near-events", EventController.getEventNearToAnEventByEventId);
+
 export default router;

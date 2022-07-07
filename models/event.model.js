@@ -10,15 +10,15 @@ const schemaEvent = mongoose.Schema({
     location: {
         type: {
             type: String,
-            required: true,
+            default: "Point",
         },
         coordinates: {
-            type: [Number],
-            required: true,
+            type: [],
         },
     },
     animals: [{ type: mongoose.Schema.Types.ObjectId, ref: "Animal" }],
     customers: [{ type: mongoose.Schema.Types.ObjectId, ref: "Customer" }],
 });
 
+schemaEvent.index({ location: "2dsphere" });
 export default mongoose.model("Event", schemaEvent);

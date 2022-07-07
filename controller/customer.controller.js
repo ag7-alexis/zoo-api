@@ -41,7 +41,6 @@ export const deleteById = async (req, res) => {
 
 export const create = async (req, res) => {
     const { name, email, address, phone, peoples, events } = req.body;
-    console.log(req.body);
     try {
         const customer = await CustomerService.createCustomer({
             name,
