@@ -34,6 +34,7 @@ se rendre sur http://localhost:{votre PORT}/api-docs/
     On utilise également cookie-parser, qui lui va permettre de passer notre token de connexion dans nos cookies.
     Et par la suite les routes sécurisées vont, avant leur exécution, passer par "authentificate" notre "Middleware" (Le middleware permet d'exécuter du code avant que la requête ne se termine).
     Ainsi on peut vérifier si dans les cookies nous avons notre "token". Si c'est le cas on peut donc exécuter la route.
+    =>Pour tester directement la connexion un compte existe déjà : login : "test" / password : "test".
 
 ## Modules
 
