@@ -11,6 +11,14 @@ export const getEvents = (filter, page, limit) => {
     }
 };
 
+export const getCountEvents = (filter) => {
+    try {
+        return Event.count(filter);
+    } catch (e) {
+        throw Error("Error while find count of Events");
+    }
+};
+
 export const getEventById = (id) => {
     try {
         return Event.findById(id);
@@ -49,5 +57,17 @@ export const updateEvent = (id, eventData) => {
         return Event.findByIdAndUpdate(id, eventData, { new: true });
     } catch (error) {
         throw Error("Fail when try to update Event with Id " + id);
+    }
+};
+
+export const findEventsByGeocoding = (filter, page, limit) => {
+    try {
+        return Event.geoSearch(filter)
+            .sort("-creationDate")
+            .skip(page * limit)
+            .limit(limit);
+    } catch (e) {
+        console.log(e);
+        throw Error("Error while Paginating Events");
     }
 };

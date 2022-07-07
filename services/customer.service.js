@@ -11,6 +11,14 @@ export const getCustomers = (filter, page, limit) => {
     }
 };
 
+export const getCountCustomers = (filter) => {
+    try {
+        return Customer.count(filter);
+    } catch (e) {
+        throw Error("Error while find count of Customers");
+    }
+};
+
 export const getCustomerById = (id) => {
     try {
         return Customer.findById(id);

@@ -11,6 +11,14 @@ export const getAnimals = (filter, page, limit) => {
     }
 };
 
+export const getCountAnimals = (filter) => {
+    try {
+        return Animal.count(filter);
+    } catch (e) {
+        throw Error("Error while find count of Animals");
+    }
+};
+
 export const getAnimalById = (id) => {
     try {
         return Animal.findById(id);

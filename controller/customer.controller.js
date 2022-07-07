@@ -4,8 +4,10 @@ export const getAll = async (req, res) => {
     const page = Math.max(parseInt(req.query.page) || 0, 0);
     const limit = Math.max(parseInt(req.query.limit) || 10, 1);
     try {
-        const customer = await CustomerService.getCustomers({}, page, limit);
-        return res.send(customer);
+        const customers = await CustomerService.getCustomers({}, page, limit);
+        const countCustomers = await CustomerService.getCountCustomers({});
+        res.setHeader("X-Total", countCustomers);
+        return res.send(customers);
     } catch (error) {
         return res.status(500).send({ message: error });
     }
@@ -38,11 +40,10 @@ export const deleteById = async (req, res) => {
 };
 
 export const create = async (req, res) => {
-    const { name, age, email, address, phone, peoples, events } = req.body;
+    const { name, email, address, phone, peoples, events } = req.body;
     try {
         const customer = await CustomerService.createCustomer({
             name,
-            age,
             email,
             address,
             phone,
@@ -57,13 +58,13 @@ export const create = async (req, res) => {
 
 export const replace = async (req, res) => {
     const { id } = req.params;
-    const { name, age, email, address, phone, peoples, events } = req.body;
+    const { name, email, address, phone, peoples, events } = req.body;
     try {
         const customer = await CustomerService.replaceCustomer(
             { _id: id },
             {
                 name,
-                age,
+
                 email,
                 address,
                 phone,
@@ -82,12 +83,11 @@ export const replace = async (req, res) => {
 
 export const update = async (req, res) => {
     const { id } = req.params;
-    const { name, age, email, address, phone, peoples, events } = req.body;
+    const { name, email, address, phone, peoples, events } = req.body;
 
     try {
         const customer = await CustomerService.updateCustomer(id, {
             ...(name !== undefined && { name }),
-            ...(age !== undefined && { age }),
             ...(email !== undefined && { email }),
             ...(address !== undefined && { address }),
             ...(phone !== undefined && { phone }),
