@@ -23,7 +23,7 @@ router.post("/register", AuthController.register);
  *       200:
  *         description: Returns a mysterious string.
  */
-router.get("/login", AuthController.login);
+router.post("/login", AuthController.login);
 
 export default router;
 
