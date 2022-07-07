@@ -41,11 +41,11 @@ router.get("/animal", AnimalController.getAll);
  * @openapi
  * /api/animal:
  *   post:
- *     description: Welcome to swagger-jsdoc!
+ *     description: Create an animal
  *     tags: [Animal]
  *     responses:
  *       201:
- *         description: Returns a mysterious string.
+ *         description: Returns the created animal.
  */
 router.post("/animal", AnimalController.create);
 

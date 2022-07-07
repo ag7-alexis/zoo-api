@@ -15,11 +15,11 @@ const router = express.Router();
  * @openapi
  * /api/register:
  *   post:
- *     description: Register a user.
+ *     description: Register an user.
  *     tags: [User]
  *     responses:
- *       200:
- *         description: Register a user.
+ *       201:
+ *         description: Returns the registered user.
  */
 router.post("/register", AuthController.register);
 
@@ -33,23 +33,26 @@ router.post("/register", AuthController.register);
  *       200:
  *         description: Generate a token of connexion.
  *         headers:
- *            Authorization:
+ *            access_token:
  *              type: string
  *              description: Use the token.
+ *       400:
+ *          description: Invalid credentials.
  */
 router.post("/login", AuthController.login);
 
 /**
  * @openapi
  * /api/auth-check:
- *   post:
+ *   get:
  *     description: Verify if you are connected.
  *     tags: [User]
  *     responses:
  *       200:
- *         description: Response a string.
+ *         description: Is Auth.
+ *       401:
+ *         description: Not auth.
  */
 router.get("/auth-check", authentificateJWT, AuthController.verifyAuth);
 
 export default router;
-
