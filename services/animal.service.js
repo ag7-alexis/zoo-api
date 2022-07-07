@@ -43,13 +43,11 @@ export const createAnimal = async (animalData) => {
             animal.events.map(async (e) => {
                 const event = await EventService.getEventById(e);
                 event.animals.push(animal);
-                console.log(event);
                 return event.save();
             })
         );
         return animal.save();
     } catch (error) {
-        console.log(error);
         throw new Error("Fail when try to create Animal");
     }
 };
