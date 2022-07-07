@@ -1,4 +1,5 @@
 import * as CustomerService from "../services/customer.service.js";
+import * as EventService from "../services/event.service.js";
 
 export const getAll = async (req, res) => {
     const page = Math.max(parseInt(req.query.page) || 0, 0);
@@ -28,12 +29,13 @@ export const getById = async (req, res) => {
 
 export const getCustomerEventsId = async (req, res) => {
     const { id } = req.params;
+    const page = Math.max(parseInt(req.query.page) || 0, 0);
+    const limit = Math.max(parseInt(req.query.limit) || 10, 1);
     try {
-        const customer = await CustomerService.getCustomerEventsById(id);
-        if (customer === null) {
-            return res.status(404).send({ message: "Can't found customer with Id " + id });
-        }
-        return res.send(customer);
+        const events = await EventService.getEvents({ customers: id }, page, limit);
+        const countEvents = await EventService.getCountEvents({ customers: id });
+        res.setHeader("X-Total", countEvents);
+        return res.send(events);
     } catch (error) {
         return res.status(500).send({ message: error });
     }
@@ -41,18 +43,12 @@ export const getCustomerEventsId = async (req, res) => {
 
 export const getMajorMinor = async (req, res) => {
     try {
-        const customerMajor = await CustomerService.getMajorCustomer({});
-        const customerMinor = await CustomerService.getMinorCustomer({});
-        if (customerMajor === null) {
-            return res.status(404).send({ message: "Can't found major and minor customer" });
-        }
-        return res.send({customerMajor, customerMinor});
+        const customerMajor = await CustomerService.countPeopleBySexe();
+        return res.send(customerMajor);
     } catch (error) {
         return res.status(500).send({ message: error });
     }
 };
-
-
 
 export const deleteById = async (req, res) => {
     const { id } = req.params;

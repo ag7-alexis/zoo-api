@@ -95,10 +95,9 @@ router.post("/customer", CustomerController.create);
  */
 router.get("/customer/:id", CustomerController.getById);
 
-
 /**
  * @openapi
- * /api/customer-events/{id}:
+ * /api/customer/:id/events:
  *   get:
  *     description: Welcome to swagger-jsdoc!
  *     tags: [Customer]
@@ -113,12 +112,11 @@ router.get("/customer/:id", CustomerController.getById);
  *       404:
  *         description: Customer with this id not found.
  */
-router.get("/customer-events/:id", CustomerController.getCustomerEventsId);
-
+router.get("/customer/:id/events", CustomerController.getCustomerEventsId);
 
 /**
  * @openapi
- * /api/customer-major-minor:
+ * /api/customer/metrics/sexe:
  *   get:
  *     description: Welcome to swagger-jsdoc!
  *     tags: [Customer]
@@ -133,8 +131,7 @@ router.get("/customer-events/:id", CustomerController.getCustomerEventsId);
  *       404:
  *         description: Customer with this id not found.
  */
- router.get("/customer-major-minor", CustomerController.getMajorMinor);
-
+router.get("/customer/metrics/sexe", CustomerController.getMajorMinor);
 
 /**
  * @openapi
