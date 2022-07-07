@@ -10,6 +10,7 @@ npm install
 créer un fichier .env a partir du .env.default avec vos infos
 nodemon index.json
 se rendre sur http://localhost:{votre PORT}/api-docs/
+Les différentes collections pour la base de données est disponible en format "json" dans le dossier "database".
 
 ## Arborescence
 - L'utilisateur de Zoo Api va effectuer une requête sur une route, exemple : "/api/animal".
