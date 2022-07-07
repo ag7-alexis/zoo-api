@@ -1,14 +1,8 @@
 # zoo-api
 
-## Collections
-
-### Visiteurs
-
-### Animaux
-
-### Présentations
-
-## Modules
+## Présentation
+Zoo Api est une api qui permet la gestion des événements, des animeaux et des clients du zoo.
+Commencer à prendre l'application en main : http://localhost:3000/api-docs/
 
 ## Register / Login
 - Register :
@@ -24,6 +18,8 @@
   Ainsi on peut vérifier si dans les cookies nous avons notre "token". Si c'est le cas on peut donc exécuter la route.
 
 
+## Modules
+
 ### dotenv
 
 https://github.com/motdotla/dotenv
@@ -31,9 +27,9 @@ Permet de gérer des variables d'environnement depuis les fichiers .env, cela pe
 
 ## ERREURS
 
-- Erreur Cookie : 
- Problème : Il était impossible de récupérer le cookie comportant le "token".
- Solution : Installer "cookie-parser" et l'initialiser dans notre "index.js", puis faire l'appel suivant => "app.use(cookieParser());".
+### Erreur Cookie
+Problème : Il était impossible de récupérer le cookie comportant le "token".
+Solution : Installer "cookie-parser" et l'initialiser dans notre "index.js", puis faire l'appel suivant => "app.use(cookieParser());".
 
 ### Passer de require a import
 

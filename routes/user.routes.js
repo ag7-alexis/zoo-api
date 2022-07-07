@@ -4,24 +4,33 @@ import * as AuthController from "../controller/auth.controller.js";
 const router = express.Router();
 
 /**
+ * @swagger
+ * tags:
+ *   name: User
+ *   description: User management
+ */
+
+/**
  * @openapi
- * /:
- *   register:
- *     description: Welcome to swagger-jsdoc!
+ * /api/register:
+ *   post:
+ *     description: Register a user.
+ *     tags: [User]
  *     responses:
  *       200:
- *         description: Returns a mysterious string.
+ *         description: Register a user.
  */
 router.post("/register", AuthController.register);
 
 /**
  * @openapi
- * /:
- *   login:
- *     description: Welcome to swagger-jsdoc!
+ * /api/login:
+ *   post:
+ *     description: Connexion with a user account.
+ *     tags: [User]
  *     responses:
  *       200:
- *         description: Returns a mysterious string.
+ *         description: Generate a token of connexion.
  */
 router.post("/login", AuthController.login);
 
