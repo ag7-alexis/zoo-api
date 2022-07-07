@@ -5,7 +5,7 @@ export const createUser = (userData) => {
         const user = new User(userData);
         return user.save();
     } catch (error) {
-        throw Error("Fail when try to create User");
+        throw new Error("Fail when try to create User");
     }
 };
 
@@ -13,6 +13,6 @@ export const findUser = (userData) => {
     try {
         return User.findOne({ login: userData.login });
     } catch (error) {
-        throw Error("Fail when try to login");
+        throw new Error("Fail when try to login");
     }
 };
