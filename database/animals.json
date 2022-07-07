@@ -1,0 +1,456 @@
+[{
+  "_id": {
+    "$oid": "62c550ec3d12935f77ed2c7b"
+  },
+  "name": "Gerard",
+  "race": "lion",
+  "age": 9,
+  "sexe": "male",
+  "events": [
+    {
+      "$oid": "62c54af9830cebad7b75bb97"
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c551253d12935f77ed2c7d"
+  },
+  "name": "Geraldine",
+  "race": "lion",
+  "age": 9,
+  "sexe": "femelle",
+  "events": [
+    {
+      "$oid": "62c54af9830cebad7b75bb97"
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c5513b3d12935f77ed2c7f"
+  },
+  "name": "Diego",
+  "race": "tigre",
+  "age": 11,
+  "sexe": "male",
+  "events": [
+    {
+      "$oid": "62c54af9830cebad7b75bb97"
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c568bc273188810c6104e9"
+  },
+  "name": "Daisy",
+  "race": "tigre",
+  "age": 12,
+  "sexe": "femelle",
+  "events": [
+    {
+      "$oid": "62c54af9830cebad7b75bb97"
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c689cc4124a7d67e0299b9"
+  },
+  "name": "tatoo",
+  "race": "ours",
+  "age": 11,
+  "sexe": "femelle",
+  "events": [
+    {
+      "$oid": "62c5e627a3ba1d5f52ad8b51"
+    }
+  ],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657178572675"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c68a054124a7d67e0299bb"
+  },
+  "name": "Simba",
+  "race": "ours",
+  "age": 9,
+  "sexe": "male",
+  "events": [
+    {
+      "$oid": "62c5e627a3ba1d5f52ad8b51"
+    }
+  ],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657178629975"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c68a384124a7d67e0299bd"
+  },
+  "name": "Elvis",
+  "race": "ours",
+  "age": 6,
+  "sexe": "male",
+  "events": [
+    {
+      "$oid": "62c5e627a3ba1d5f52ad8b51"
+    }
+  ],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657178680933"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6904305a107a53ab37966"
+  },
+  "name": "Anodin",
+  "race": "tortue",
+  "age": 15,
+  "sexe": "male",
+  "events": [
+    {
+      "$oid": "62c68c334124a7d67e0299c2"
+    }
+  ],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657180227518"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6907005a107a53ab37968"
+  },
+  "name": "Bistrot",
+  "race": "tortue",
+  "age": 13,
+  "sexe": "femelle",
+  "events": [
+    {
+      "$oid": "62c68c334124a7d67e0299c2"
+    }
+  ],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657180272076"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6908205a107a53ab3796a"
+  },
+  "name": "Devin",
+  "race": "tortue",
+  "age": 7,
+  "sexe": "femelle",
+  "events": [
+    {
+      "$oid": "62c68c334124a7d67e0299c2"
+    }
+  ],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657180290368"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6d0f94dcfcb06b0e70c82"
+  },
+  "name": "Gerard",
+  "race": "lion",
+  "age": 9,
+  "sexe": "male",
+  "events": [
+    {
+      "$oid": "62c6b807eb5ed27b7ff8222b"
+    }
+  ],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657196793143"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6db0e55af97599b4dd638"
+  },
+  "name": "Devin",
+  "race": "cow",
+  "age": 7,
+  "sexe": "femelle",
+  "events": [
+    {
+      "$oid": "62c6b6e2eb5ed27b7ff82227"
+    }
+  ],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657199374908"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6db1055af97599b4dd63a"
+  },
+  "name": "Devin",
+  "race": "cow",
+  "age": 7,
+  "sexe": "femelle",
+  "events": [
+    {
+      "$oid": "62c6b6e2eb5ed27b7ff82227"
+    }
+  ],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657199376031"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6db1155af97599b4dd63c"
+  },
+  "name": "Devin",
+  "race": "cow",
+  "age": 7,
+  "sexe": "femelle",
+  "events": [
+    {
+      "$oid": "62c6b6e2eb5ed27b7ff82227"
+    }
+  ],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657199377046"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6db1255af97599b4dd63e"
+  },
+  "name": "Devin",
+  "race": "cow",
+  "age": 7,
+  "sexe": "femelle",
+  "events": [
+    {
+      "$oid": "62c6b6e2eb5ed27b7ff82227"
+    }
+  ],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657199378018"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6db1355af97599b4dd640"
+  },
+  "name": "Devin",
+  "race": "cow",
+  "age": 7,
+  "sexe": "femelle",
+  "events": [
+    {
+      "$oid": "62c6b6e2eb5ed27b7ff82227"
+    }
+  ],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657199379068"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6db4655af97599b4dd642"
+  },
+  "name": "Annie",
+  "race": "bird",
+  "age": 9,
+  "sexe": "male",
+  "events": [
+    {
+      "$oid": "62c6b735eb5ed27b7ff82229"
+    }
+  ],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657199430126"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6db4755af97599b4dd644"
+  },
+  "name": "Walter",
+  "race": "bird",
+  "age": 9,
+  "sexe": "male",
+  "events": [
+    {
+      "$oid": "62c6b735eb5ed27b7ff82229"
+    }
+  ],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657199431024"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6db4855af97599b4dd646"
+  },
+  "name": "Jay",
+  "race": "bird",
+  "age": 9,
+  "sexe": "male",
+  "events": [
+    {
+      "$oid": "62c6b735eb5ed27b7ff82229"
+    }
+  ],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657199432156"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6db4955af97599b4dd648"
+  },
+  "name": "Santina",
+  "race": "bird",
+  "age": 9,
+  "sexe": "male",
+  "events": [
+    {
+      "$oid": "62c6b735eb5ed27b7ff82229"
+    }
+  ],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657199433168"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6db4a55af97599b4dd64a"
+  },
+  "name": "Koby",
+  "race": "bird",
+  "age": 9,
+  "sexe": "male",
+  "events": [
+    {
+      "$oid": "62c6b735eb5ed27b7ff82229"
+    }
+  ],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657199434398"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6db5355af97599b4dd64c"
+  },
+  "name": "Wellington",
+  "race": "bird",
+  "age": 15,
+  "sexe": "femelle",
+  "events": [
+    {
+      "$oid": "62c6b735eb5ed27b7ff82229"
+    }
+  ],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657199443041"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6db5355af97599b4dd64e"
+  },
+  "name": "Electa",
+  "race": "bird",
+  "age": 15,
+  "sexe": "femelle",
+  "events": [
+    {
+      "$oid": "62c6b735eb5ed27b7ff82229"
+    }
+  ],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657199443888"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6db5d55af97599b4dd650"
+  },
+  "name": "Lawrence",
+  "race": "bird",
+  "age": 15,
+  "sexe": "femelle",
+  "events": [
+    {
+      "$oid": "62c6b807eb5ed27b7ff8222b"
+    }
+  ],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657199453749"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6db5e55af97599b4dd652"
+  },
+  "name": "Dannie",
+  "race": "bird",
+  "age": 15,
+  "sexe": "femelle",
+  "events": [
+    {
+      "$oid": "62c6b807eb5ed27b7ff8222b"
+    }
+  ],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657199454697"
+    }
+  },
+  "__v": 0
+}]

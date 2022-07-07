@@ -1,0 +1,1021 @@
+[{
+  "_id": {
+    "$oid": "62c6a3bb768eaa1205eb3b88"
+  },
+  "title": "test loca border",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -103.9667,
+      51.78
+    ]
+  },
+  "animals": [],
+  "customers": [],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657185211038"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6b575eb5ed27b7ff82223"
+  },
+  "title": "Les 10 ans du parc avec des crocodiles",
+  "description": "Spetacle pour feter les 10 ans",
+  "startDate": {
+    "$date": {
+      "$numberLong": "1678147200000"
+    }
+  },
+  "endDate": {
+    "$date": {
+      "$numberLong": "1678147200000"
+    }
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -73.9667,
+      20.78
+    ]
+  },
+  "animals": [],
+  "customers": [],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657189749393"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6b626eb5ed27b7ff82225"
+  },
+  "title": "Noël au parc",
+  "description": "Noël au parc",
+  "startDate": {
+    "$date": {
+      "$numberLong": "1702598400000"
+    }
+  },
+  "endDate": {
+    "$date": {
+      "$numberLong": "1703721600000"
+    }
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -63.9667,
+      15.78
+    ]
+  },
+  "animals": [],
+  "customers": [],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657189926272"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6b6e2eb5ed27b7ff82227"
+  },
+  "title": "Summer Event",
+  "description": "Passer un week-end au zoo cet été",
+  "startDate": {
+    "$date": {
+      "$numberLong": "1690848000000"
+    }
+  },
+  "endDate": {
+    "$date": {
+      "$numberLong": "1693180800000"
+    }
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -43.9667,
+      25.78
+    ]
+  },
+  "animals": [],
+  "customers": [],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657190114434"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6b735eb5ed27b7ff82229"
+  },
+  "title": "Winter Event",
+  "description": "Passer l'hiver avec les animaux",
+  "startDate": {
+    "$date": {
+      "$numberLong": "1698796800000"
+    }
+  },
+  "endDate": {
+    "$date": {
+      "$numberLong": "1673740800000"
+    }
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -45.9667,
+      28.78
+    ]
+  },
+  "animals": [],
+  "customers": [],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657190197893"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6b807eb5ed27b7ff8222b"
+  },
+  "title": "Evenement Famille",
+  "description": "Passer un week-end en famille au zoo",
+  "startDate": {
+    "$date": {
+      "$numberLong": "1693526400000"
+    }
+  },
+  "endDate": {
+    "$date": {
+      "$numberLong": "1697328000000"
+    }
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -12.9667,
+      28.78
+    ]
+  },
+  "animals": [
+    {
+      "$oid": "62c6d0f94dcfcb06b0e70c82"
+    }
+  ],
+  "customers": [
+    {
+      "$oid": "62c6d575b25e7c6cb7ba5fad"
+    }
+  ],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657190407439"
+    }
+  },
+  "__v": 2
+},{
+  "_id": {
+    "$oid": "62c6da5f55af97599b4dd602"
+  },
+  "title": "Multi-tiered optimizing concept",
+  "description": "Expanded 6th generation approach",
+  "startDate": {
+    "$date": {
+      "$numberLong": "1693526400000"
+    }
+  },
+  "endDate": {
+    "$date": {
+      "$numberLong": "1684108800000"
+    }
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -45.9667,
+      28.78
+    ]
+  },
+  "animals": [],
+  "customers": [],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657199199883"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6da6555af97599b4dd604"
+  },
+  "title": "Total systemic workforce",
+  "description": "Multi-layered upward-trending architecture",
+  "startDate": {
+    "$date": {
+      "$numberLong": "1693526400000"
+    }
+  },
+  "endDate": {
+    "$date": {
+      "$numberLong": "1684108800000"
+    }
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -45.9667,
+      28.78
+    ]
+  },
+  "animals": [],
+  "customers": [],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657199205536"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6da6655af97599b4dd606"
+  },
+  "title": "Extended impactful service-desk",
+  "description": "Optimized intermediate methodology",
+  "startDate": {
+    "$date": {
+      "$numberLong": "1693526400000"
+    }
+  },
+  "endDate": {
+    "$date": {
+      "$numberLong": "1684108800000"
+    }
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -45.9667,
+      28.78
+    ]
+  },
+  "animals": [],
+  "customers": [],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657199206721"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6da6c55af97599b4dd608"
+  },
+  "title": "User-friendly national implementation",
+  "description": "Programmable regional project",
+  "startDate": {
+    "$date": {
+      "$numberLong": "1693526400000"
+    }
+  },
+  "endDate": {
+    "$date": {
+      "$numberLong": "1684108800000"
+    }
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -45.9667,
+      28.78
+    ]
+  },
+  "animals": [],
+  "customers": [],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657199212061"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6da6d55af97599b4dd60a"
+  },
+  "title": "Multi-lateral radical process improvement",
+  "description": "Organized next generation software",
+  "startDate": {
+    "$date": {
+      "$numberLong": "1693526400000"
+    }
+  },
+  "endDate": {
+    "$date": {
+      "$numberLong": "1684108800000"
+    }
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -45.9667,
+      28.78
+    ]
+  },
+  "animals": [],
+  "customers": [],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657199213089"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6da6e55af97599b4dd60c"
+  },
+  "title": "Object-based neutral time-frame",
+  "description": "Organized eco-centric protocol",
+  "startDate": {
+    "$date": {
+      "$numberLong": "1693526400000"
+    }
+  },
+  "endDate": {
+    "$date": {
+      "$numberLong": "1684108800000"
+    }
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -45.9667,
+      28.78
+    ]
+  },
+  "animals": [],
+  "customers": [],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657199214111"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6da6f55af97599b4dd60e"
+  },
+  "title": "Integrated solution-oriented benchmark",
+  "description": "Public-key national adapter",
+  "startDate": {
+    "$date": {
+      "$numberLong": "1693526400000"
+    }
+  },
+  "endDate": {
+    "$date": {
+      "$numberLong": "1684108800000"
+    }
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -45.9667,
+      28.78
+    ]
+  },
+  "animals": [],
+  "customers": [],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657199215066"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6da7055af97599b4dd610"
+  },
+  "title": "Innovative upward-trending matrices",
+  "description": "Public-key maximized knowledge base",
+  "startDate": {
+    "$date": {
+      "$numberLong": "1693526400000"
+    }
+  },
+  "endDate": {
+    "$date": {
+      "$numberLong": "1684108800000"
+    }
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -45.9667,
+      28.78
+    ]
+  },
+  "animals": [],
+  "customers": [],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657199216080"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6da7155af97599b4dd612"
+  },
+  "title": "De-engineered systemic groupware",
+  "description": "Progressive disintermediate workforce",
+  "startDate": {
+    "$date": {
+      "$numberLong": "1693526400000"
+    }
+  },
+  "endDate": {
+    "$date": {
+      "$numberLong": "1684108800000"
+    }
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -45.9667,
+      28.78
+    ]
+  },
+  "animals": [],
+  "customers": [],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657199217010"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6da7155af97599b4dd614"
+  },
+  "title": "Cloned bi-directional extranet",
+  "description": "Balanced secondary time-frame",
+  "startDate": {
+    "$date": {
+      "$numberLong": "1693526400000"
+    }
+  },
+  "endDate": {
+    "$date": {
+      "$numberLong": "1684108800000"
+    }
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -45.9667,
+      28.78
+    ]
+  },
+  "animals": [],
+  "customers": [],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657199217922"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6da7255af97599b4dd616"
+  },
+  "title": "Focused heuristic internet solution",
+  "description": "Compatible analyzing approach",
+  "startDate": {
+    "$date": {
+      "$numberLong": "1693526400000"
+    }
+  },
+  "endDate": {
+    "$date": {
+      "$numberLong": "1684108800000"
+    }
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -45.9667,
+      28.78
+    ]
+  },
+  "animals": [],
+  "customers": [],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657199218698"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6da7355af97599b4dd618"
+  },
+  "title": "Exclusive zero administration attitude",
+  "description": "Versatile coherent architecture",
+  "startDate": {
+    "$date": {
+      "$numberLong": "1693526400000"
+    }
+  },
+  "endDate": {
+    "$date": {
+      "$numberLong": "1684108800000"
+    }
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -45.9667,
+      28.78
+    ]
+  },
+  "animals": [],
+  "customers": [],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657199219687"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6da7455af97599b4dd61a"
+  },
+  "title": "Fundamental incremental database",
+  "description": "Team-oriented disintermediate circuit",
+  "startDate": {
+    "$date": {
+      "$numberLong": "1693526400000"
+    }
+  },
+  "endDate": {
+    "$date": {
+      "$numberLong": "1684108800000"
+    }
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -45.9667,
+      28.78
+    ]
+  },
+  "animals": [],
+  "customers": [],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657199220579"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6da8055af97599b4dd61c"
+  },
+  "title": "Implemented asymmetric matrix",
+  "description": "Polarised background strategy",
+  "startDate": {
+    "$date": {
+      "$numberLong": "1683504000000"
+    }
+  },
+  "endDate": {
+    "$date": {
+      "$numberLong": "1677974400000"
+    }
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -45.9667,
+      28.78
+    ]
+  },
+  "animals": [],
+  "customers": [],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657199232991"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6da8155af97599b4dd61e"
+  },
+  "title": "Optional holistic circuit",
+  "description": "Grass-roots analyzing core",
+  "startDate": {
+    "$date": {
+      "$numberLong": "1683504000000"
+    }
+  },
+  "endDate": {
+    "$date": {
+      "$numberLong": "1677974400000"
+    }
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -45.9667,
+      28.78
+    ]
+  },
+  "animals": [],
+  "customers": [],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657199233728"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6da8255af97599b4dd620"
+  },
+  "title": "Compatible scalable intranet",
+  "description": "Ergonomic optimal benchmark",
+  "startDate": {
+    "$date": {
+      "$numberLong": "1683504000000"
+    }
+  },
+  "endDate": {
+    "$date": {
+      "$numberLong": "1677974400000"
+    }
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -45.9667,
+      28.78
+    ]
+  },
+  "animals": [],
+  "customers": [],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657199234731"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6da8355af97599b4dd622"
+  },
+  "title": "Universal asynchronous monitoring",
+  "description": "Profound background productivity",
+  "startDate": {
+    "$date": {
+      "$numberLong": "1683504000000"
+    }
+  },
+  "endDate": {
+    "$date": {
+      "$numberLong": "1677974400000"
+    }
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -45.9667,
+      28.78
+    ]
+  },
+  "animals": [],
+  "customers": [],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657199235703"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6da8455af97599b4dd624"
+  },
+  "title": "Future-proofed 6th generation help-desk",
+  "description": "Compatible next generation analyzer",
+  "startDate": {
+    "$date": {
+      "$numberLong": "1683504000000"
+    }
+  },
+  "endDate": {
+    "$date": {
+      "$numberLong": "1677974400000"
+    }
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -45.9667,
+      28.78
+    ]
+  },
+  "animals": [],
+  "customers": [],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657199236587"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6da8655af97599b4dd626"
+  },
+  "title": "Synergized bandwidth-monitored product",
+  "description": "Grass-roots global groupware",
+  "startDate": {
+    "$date": {
+      "$numberLong": "1683504000000"
+    }
+  },
+  "endDate": {
+    "$date": {
+      "$numberLong": "1677974400000"
+    }
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -45.9667,
+      28.78
+    ]
+  },
+  "animals": [],
+  "customers": [],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657199238912"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6da8755af97599b4dd628"
+  },
+  "title": "Proactive methodical policy",
+  "description": "Adaptive homogeneous functionalities",
+  "startDate": {
+    "$date": {
+      "$numberLong": "1683504000000"
+    }
+  },
+  "endDate": {
+    "$date": {
+      "$numberLong": "1677974400000"
+    }
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -45.9667,
+      28.78
+    ]
+  },
+  "animals": [],
+  "customers": [],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657199239872"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6da8f55af97599b4dd62a"
+  },
+  "title": "Multi-channelled 3rd generation database",
+  "description": "Optimized fault-tolerant adapter",
+  "startDate": {
+    "$date": {
+      "$numberLong": "1696723200000"
+    }
+  },
+  "endDate": {
+    "$date": {
+      "$numberLong": "1699142400000"
+    }
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -45.9667,
+      28.78
+    ]
+  },
+  "animals": [],
+  "customers": [],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657199247041"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6da8f55af97599b4dd62c"
+  },
+  "title": "Decentralized heuristic service-desk",
+  "description": "Adaptive mission-critical moderator",
+  "startDate": {
+    "$date": {
+      "$numberLong": "1696723200000"
+    }
+  },
+  "endDate": {
+    "$date": {
+      "$numberLong": "1699142400000"
+    }
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -45.9667,
+      28.78
+    ]
+  },
+  "animals": [],
+  "customers": [],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657199247718"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6da9055af97599b4dd62e"
+  },
+  "title": "Versatile eco-centric budgetary management",
+  "description": "Monitored hybrid superstructure",
+  "startDate": {
+    "$date": {
+      "$numberLong": "1696723200000"
+    }
+  },
+  "endDate": {
+    "$date": {
+      "$numberLong": "1699142400000"
+    }
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -45.9667,
+      28.78
+    ]
+  },
+  "animals": [],
+  "customers": [],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657199248631"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6da9155af97599b4dd630"
+  },
+  "title": "Switchable optimizing projection",
+  "description": "Horizontal local superstructure",
+  "startDate": {
+    "$date": {
+      "$numberLong": "1696723200000"
+    }
+  },
+  "endDate": {
+    "$date": {
+      "$numberLong": "1699142400000"
+    }
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -45.9667,
+      28.78
+    ]
+  },
+  "animals": [],
+  "customers": [],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657199249384"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6da9255af97599b4dd632"
+  },
+  "title": "Virtual analyzing extranet",
+  "description": "Exclusive object-oriented task-force",
+  "startDate": {
+    "$date": {
+      "$numberLong": "1696723200000"
+    }
+  },
+  "endDate": {
+    "$date": {
+      "$numberLong": "1699142400000"
+    }
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -45.9667,
+      28.78
+    ]
+  },
+  "animals": [],
+  "customers": [],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657199250222"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6da9355af97599b4dd634"
+  },
+  "title": "Optional 24 hour throughput",
+  "description": "Operative system-worthy Graphic Interface",
+  "startDate": {
+    "$date": {
+      "$numberLong": "1696723200000"
+    }
+  },
+  "endDate": {
+    "$date": {
+      "$numberLong": "1699142400000"
+    }
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -45.9667,
+      28.78
+    ]
+  },
+  "animals": [],
+  "customers": [],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657199251408"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c6da9555af97599b4dd636"
+  },
+  "title": "Automated actuating approach",
+  "description": "Visionary exuding support",
+  "startDate": {
+    "$date": {
+      "$numberLong": "1696723200000"
+    }
+  },
+  "endDate": {
+    "$date": {
+      "$numberLong": "1699142400000"
+    }
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -45.9667,
+      28.78
+    ]
+  },
+  "animals": [],
+  "customers": [],
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1657199253467"
+    }
+  },
+  "__v": 0
+}]
