@@ -46,3 +46,11 @@ export const login = async (req, res) => {
         return res.status(500).send({ message: error });
     }
 };
+
+export const verifyAuth = async (req, res) => {
+    try {
+        return res.send("You are connected !");
+    } catch (error) {
+        return res.status(500).send({ message: error });
+    }
+};

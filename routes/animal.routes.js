@@ -1,6 +1,5 @@
 import express from "express";
 import * as AnimalController from "../controller/animal.controller.js";
-import { authentificateJWT } from "../authentificate.js";
 
 const router = express.Router();
 
@@ -36,7 +35,7 @@ const router = express.Router();
  *              type: integer
  *              description: Total of animals to paginate.
  */
-router.get("/animal", authentificateJWT, AnimalController.getAll);
+router.get("/animal", AnimalController.getAll);
 
 /**
  * @openapi

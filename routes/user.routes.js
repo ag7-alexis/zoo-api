@@ -1,5 +1,6 @@
 import express from "express";
 import * as AuthController from "../controller/auth.controller.js";
+import { authentificateJWT } from "../authentificate.js";
 
 const router = express.Router();
 
@@ -37,6 +38,18 @@ router.post("/register", AuthController.register);
  *              description: Use the token.
  */
 router.post("/login", AuthController.login);
+
+/**
+ * @openapi
+ * /api/auth-check:
+ *   post:
+ *     description: Verify if you are connected.
+ *     tags: [User]
+ *     responses:
+ *       200:
+ *         description: Response a string.
+ */
+router.get("/auth-check", authentificateJWT, AuthController.verifyAuth);
 
 export default router;
 

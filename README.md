@@ -46,7 +46,7 @@ Permet de gérer des variables d'environnement depuis les fichiers .env, cela pe
 
 ### SWAGGER
 
-TODO: on a un probleme au niveau des formulaires, quand on submit le body n'est pas envoyé et on a pas eu le temps de fix ça
+TODO: on a un probleme au niveau des formulaires, quand on submit le body, il n'est pas envoyé et on a pas eu le temps de fix ça
 
 ### Erreur Cookie
 
