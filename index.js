@@ -7,6 +7,7 @@ import mongoose from "mongoose";
 import swaggerJSDoc from "swagger-jsdoc";
 import swaggerUi from "swagger-ui-express";
 import * as dotenv from "dotenv";
+import cookieParser from "cookie-parser";
 
 dotenv.config();
 
@@ -32,6 +33,8 @@ const database = mongoose.connection;
 database.on("error", console.error.bind(console, "connection error"));
 
 app.use(express.json());
+
+app.use(cookieParser());
 
 const specs = swaggerJSDoc(options);
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(specs));

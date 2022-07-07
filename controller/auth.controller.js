@@ -1,7 +1,6 @@
 import Bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import * as UserService from "../services/user.service.js";
-import cookieParser from "cookie-parser";
 
 export const register = async (req, res) => {
     const login = req.body.login;
