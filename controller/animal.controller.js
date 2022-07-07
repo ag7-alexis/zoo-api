@@ -6,6 +6,8 @@ export const getAll = async (req, res) => {
 
     try {
         const animals = await AnimalService.getAnimals({}, page, limit);
+        const countAnimals = await AnimalService.getCountAnimals({});
+        res.setHeader("X-Total", countAnimals);
         return res.send(animals);
     } catch (error) {
         return res.status(500).send({ message: error });

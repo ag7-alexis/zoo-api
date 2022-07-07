@@ -11,6 +11,14 @@ export const getEvents = (filter, page, limit) => {
     }
 };
 
+export const getCountEvents = (filter) => {
+    try {
+        return Event.count(filter);
+    } catch (e) {
+        throw Error("Error while find count of Events");
+    }
+};
+
 export const getEventById = (id) => {
     try {
         return Event.findById(id);

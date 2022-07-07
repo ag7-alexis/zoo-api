@@ -6,6 +6,8 @@ export const getAll = async (req, res) => {
 
     try {
         const events = await EventService.getEvents({}, page, limit);
+        const countEvents = await EventService.getCountEvents({});
+        res.setHeader("X-Total", countEvents);
         return res.send(events);
     } catch (error) {
         return res.status(500).send({ message: error });
