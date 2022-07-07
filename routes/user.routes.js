@@ -31,6 +31,10 @@ router.post("/register", AuthController.register);
  *     responses:
  *       200:
  *         description: Generate a token of connexion.
+ *         headers:
+ *            Authorization:
+ *              type: string
+ *              description: Use the token.
  */
 router.post("/login", AuthController.login);
 
