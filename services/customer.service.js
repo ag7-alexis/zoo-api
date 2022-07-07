@@ -27,6 +27,41 @@ export const getCustomerById = (id) => {
     }
 };
 
+export const getCustomerEventsById = (id) => {
+    try {
+        return Customer.findById(id, {"events": 1} );
+    } catch (error) {
+        throw Error("Fail when try to find Customer with Id " + id);
+    }
+};
+
+export const getMinorCustomer = (filter) => {
+    try {
+        //return Customer.count({"peoples.Age": { $gt: 0, $lt: 18 }});
+        //return Customer.count({peoples: { $elemMatch: { Age: { $gt: 0, $lt: 18 } } }});
+        return Customer.aggregate([
+            { $match: { /* Query can go here, if you want to filter results. */ } } 
+          , { $group: { /* execute 'grouping' */
+                  Age: { $gt: 0, $lt: 18 } /* using the 'token' value as the _id */
+                , count: { $sum: 1 } /* create a sum value */
+              }
+            }
+        ]);
+    } catch (error) {
+        throw Error("Fail when try to find Customer major or minor");
+    }
+};
+
+export const getMajorCustomer = (filter) => {
+    try {
+        return Customer.count({"peoples.Age": { $gt: 18, $lt: 99 }});
+
+        //db.customers.find({"peoples.Age": { $gt: 18, $lt: 23 }})
+    } catch (error) {
+        throw Error("Fail when try to find Customer major or minor");
+    }
+};
+
 export const deleteCustomer = (filter) => {
     try {
         return Customer.deleteOne(filter);
