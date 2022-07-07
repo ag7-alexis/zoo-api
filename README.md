@@ -32,7 +32,11 @@ se rendre sur http://localhost:{votre PORT}/api-docs/
 https://github.com/motdotla/dotenv
 Permet de gérer des variables d'environnement depuis les fichiers .env, cela permet de séparer les configs du code. On peut gérer différentes variables d'environnement suivant l'environnement sur lequel on se situe prod, test, developement.
 
-## ERREURS
+## ERREURS/PROBLEMES
+
+### SWAGGER
+
+TODO: on a un probleme au niveau des formulaires, quand on submit le body n'est pas envoyé et on a pas eu le temps de fix ça
 
 ### Erreur Cookie
 
