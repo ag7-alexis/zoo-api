@@ -42,7 +42,7 @@ export const deleteById = async (req, res) => {
 };
 
 export const create = async (req, res) => {
-    const { title, description, startDate, endDate, countExpectedPeople, location, animals } = req.body;
+    const { title, description, startDate, endDate, countExpectedPeople, location, animals, customers } = req.body;
     try {
         const event = await EventService.createEvent({
             title,
@@ -52,6 +52,7 @@ export const create = async (req, res) => {
             countExpectedPeople,
             location,
             animals,
+            customers,
         });
         return res.status(201).send(event);
     } catch (error) {
@@ -61,7 +62,7 @@ export const create = async (req, res) => {
 
 export const replace = async (req, res) => {
     const { id } = req.params;
-    const { title, description, startDate, endDate, countExpectedPeople, location, animals } = req.body;
+    const { title, description, startDate, endDate, countExpectedPeople, location, animals, customers } = req.body;
     try {
         const event = await EventService.replaceEvent(
             { _id: id },
@@ -73,6 +74,7 @@ export const replace = async (req, res) => {
                 countExpectedPeople,
                 location,
                 animals,
+                customers,
             }
         );
         if (event === null) {
@@ -86,7 +88,7 @@ export const replace = async (req, res) => {
 
 export const update = async (req, res) => {
     const { id } = req.params;
-    const { title, description, startDate, endDate, countExpectedPeople, location, animals } = req.body;
+    const { title, description, startDate, endDate, countExpectedPeople, location, animals, customers } = req.body;
 
     try {
         const event = await EventService.updateEvent(id, {
@@ -95,6 +97,7 @@ export const update = async (req, res) => {
             ...(startDate !== undefined && { startDate }),
             ...(endDate !== undefined && { endDate }),
             ...(countExpectedPeople !== undefined && { countExpectedPeople }),
+            ...(customers !== undefined && { customers }),
             ...(location !== undefined && { location }),
             ...(animals !== undefined && { animals }),
         });
