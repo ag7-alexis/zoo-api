@@ -14,7 +14,7 @@ const router = express.Router();
  * @openapi
  * /api/event:
  *   get:
- *     description: Welcome to swagger-jsdoc!
+ *     description: Retrieve list of events.
  *     tags: [Event]
  *     parameters:
  *       - in: query
@@ -41,11 +41,11 @@ router.get("/event", EventController.getAll);
  * @openapi
  * /api/event/:
  *   post:
- *     description: Welcome to swagger-jsdoc!
+ *     description: Create a new event.
  *     tags: [Event]
  *     responses:
  *       201:
- *         description: Returns a mysterious string.
+ *         description: Returns the created event.
  */
 router.post("/event", EventController.create);
 
@@ -72,7 +72,7 @@ router.get("/event/:id", EventController.getById);
  * @openapi
  * /api/event/{id}:
  *   delete:
- *     description: Welcome to swagger-jsdoc!
+ *     description: Delete an event with an id.
  *     tags: [Event]
  *     parameters:
  *       - in: path
@@ -91,7 +91,7 @@ router.delete("/event/:id", EventController.deleteById);
  * @openapi
  * /api/event/{id}:
  *   put:
- *     description: Welcome to swagger-jsdoc!
+ *     description: Replace an event with an id.
  *     tags: [Event]
  *     parameters:
  *       - in: path
@@ -100,7 +100,7 @@ router.delete("/event/:id", EventController.deleteById);
  *         description: The id of the event
  *     responses:
  *       200:
- *         description: Returns a mysterious string.
+ *         description: Returns an event with his data replaced.
  *       404:
  *         description: Event with this id not found.
  */
@@ -110,7 +110,7 @@ router.put("/event/:id", EventController.replace);
  * @openapi
  * /api/event/{id}:
  *   patch:
- *     description: Welcome to swagger-jsdoc!
+ *     description: Edit an event with an id.
  *     tags: [Event]
  *     parameters:
  *       - in: path
@@ -119,7 +119,7 @@ router.put("/event/:id", EventController.replace);
  *         description: The id of the event
  *     responses:
  *       200:
- *         description: Returns a mysterious string.
+ *         description: Returns an event with his data edited.
  *       404:
  *         description: Event with this id not found.
  */
@@ -129,7 +129,7 @@ router.patch("/event/:id", EventController.update);
  * @openapi
  * /api/event/{id}/customers:
  *   patch:
- *     description: WRetrieve customers of an event
+ *     description: Retrieve customers of an event
  *     tags: [Event]
  *     parameters:
  *       - in: path
@@ -148,16 +148,31 @@ router.get("/event/:id/customers", EventController.getCustomerByEventId);
  * @openapi
  * /api/event/{id}/near-events:
  *   patch:
- *     description: WRetrieve customers of an event
+ *     description: Retrieve events near to an event found with his id.
  *     tags: [Event]
  *     parameters:
  *       - in: path
  *         name: id
  *         type: string
  *         description: The id of the event
+ *       - in: query
+ *         name: page
+ *         type: integer
+ *         default: 0
+ *         description: The page you want
+ *       - in: query
+ *         name: limit
+ *         type: integer
+ *         default: 10
+ *         description: The number of event per page you want
+ *       - in: query
+ *         name: distance
+ *         type: integer
+ *         default: 10000
+ *         description: The distance in meter from the event
  *     responses:
  *       200:
- *         description: Returns a list of customers.
+ *         description: Returns a list of events.
  *       404:
  *         description: Event with this id not found.
  */
